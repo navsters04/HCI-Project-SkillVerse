@@ -11,7 +11,7 @@
 }
 
 .landing{
-    height: 75vh;
+    height: 95vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
