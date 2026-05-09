@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Skill</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/ace.ico">
+    <script src="../js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/52dde08c92.js" crossorigin="anonymous"></script>
+</head>
+<body class="register">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <a href="index.html">
+            <img src="../assets/LogoDark.png" alt="Visual Skill Logo" class="logo">
+        </a>
+        <a href="register.html" class="btn">Get Started</a>
+    </nav>
+
+    
+    <section class="register-container">
+        <div class="register-header">
+            <h2>Begin Your Practice</h2>
+            <p>Create an account to track progress, join discussions, and access course materials.</p>
+        </div>
+
+        <form id="registerForm">
+            <div class="input">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="ex@email.com">
+                <span class="error-msg" id="emailError">Please enter a valid email address with @ and a domain.</span>
+            </div>
+
+            <div class="input">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Choose a username">
+                <span class="error-msg" id="usernameError">Username must be between 3 and 20 characters.</span>
+            </div>
+
+            <div class="input">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                <span class="error-msg" id="dobError">You must be at least 13 years old.</span>
+            </div>  
+
+            <div class="input">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                        <label class="radio-option">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+                <span class="error-msg" id="genderError">Please select a gender.</span>
+            </div>
+
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" autocomplete="new-password">
+                <span class="error-msg" id="passwordError">Password has to be at least 8 characters.</span>
+            </div>
+
+            <div class="input">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" autocomplete="new-password">
+                <span class="error-msg" id="confirmError">Passwords do not match.</span>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+            </div>
+            <span class="error-msg" id="termsError">You must agree to the terms to continue.</span>
+
+            <button type="submit" class="btn form-submit">Create Account</button>
+
+            <p class="form-footer">Already have an account? <a href="#">Sign in</a></p>
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url(main.css); 
+
+.register{
+    background: var(--cream);
+}
+
+.register-container {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0rem 5%;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.register-header .label {
+    display: inline-block;
+    font-family: var(--titleFont);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--darkGreen);
+    margin-bottom: 0.75rem;
+}
+
+.register-header p {
+    color: var(--fadedText);
+}
+
+.input {
+    margin-bottom: 1.25rem;
+}
+
+.input label {
+    display: block;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.4rem;
+    font-family: var(--bodyFont);
+}
+
+.input input[type="text"],
+.input input[type="email"],
+.input input[type="password"],
+.input input[type="date"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border: 1.5px solid var(--fadedText);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--bodyFont);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: var(--darkGreen);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.input input.error {
+    border-color: #BE2D2D;
+    box-shadow: 0 0 0 3px rgba(190, 45, 45, 0.1);
+}
+
+.input input.valid {
+    border-color: #26A460;
+}
+
+.error-msg {
+    display: none;
+    font-size: 0.8rem;
+    color: #BE2D2D;
+    margin-top: 0.35rem;
+}
+
+.error-msg.show {
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.radio-option {
+    cursor: pointer;
+    font-size: var(--textSize);
+    color: var(--text);
+    font-family: var(--bodyFont);
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    accent-color: var(--darkGreen);
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin: 1.25rem 0 0.25rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.15rem;
+    accent-color: var(--darkGreen);
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: rgba(17, 21, 13, 0.7);
+    line-height: 1.5;
+    font-family: var(--bodyFont);
+}
+
+.checkbox-group label a {
+    color: var(--darkGreen);
+    text-decoration: underline;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    font-family: var(--bodyFont);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(17, 21, 13, 0.6);
+}
+
+.form-footer a {
+    color: var(--darkGreen);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+    .register-container {
+        padding: 3rem 4%;
+    }
+
+    .register-container {
+        max-width: 100%;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}

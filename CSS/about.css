@@ -1,0 +1,166 @@
+@import url(main.css);
+
+.history {
+    background: var(--cream);
+    padding: 4rem 5%;
+}
+
+.history-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.history-text h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.history-text p {
+    color: var(--fadedText);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.history-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--lightGreen), var(--darkGreen));
+}
+
+.vision-mission {
+    background: var(--brown);
+    color: var(--cream);
+    padding: 4rem 5%;
+}
+
+.vm-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.vm-card {
+    background: rgba(255, 248, 236, 0.08);
+    border: 1px solid rgba(220, 204, 172, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.vm-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(220, 204, 172, 0.4);
+}
+
+.vm-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--darkGreen);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.vm-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--cream);
+}
+
+.vm-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--cream);
+}
+
+.vm-card p {
+    opacity: 0.85;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.values {
+    background: var(--cream);
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.values h2 {
+    margin-bottom: 3rem;
+    color: var(--text);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.value-item {
+    padding: 1.5rem;
+}
+
+.value-number {
+    font-family: var(--titleFont);
+    font-size: 2.5rem;
+    color: var(--darkGreen);
+    margin-bottom: 0.75rem;
+    opacity: 0.6;
+}
+
+.value-item h4 {
+    font-family: var(--titleFont);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.value-item p {
+    font-size: 0.9rem;
+    color: var(--fadedText);
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+    .history-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .history-image {
+        height: 250px;
+        order: -1;
+    }
+
+    .vm-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .history,
+    .vision-mission,
+    .values {
+        padding: 3rem 4%;
+    }
+}
