@@ -4,7 +4,7 @@
     background: linear-gradient(135deg, var(--brown) 0%, var(--darkGreen) 100%);
     color: var(--cream);
     text-align: center;
-    padding: 5rem 5% 4rem;
+    padding: 3rem 5%;
     position: relative;
     overflow: hidden;
 }
@@ -46,7 +46,7 @@
 
 .positions {
     background: var(--cream);
-    padding: 4rem 5%;
+    padding: 3rem 5%;
 }
 
 .positions-header {
@@ -151,7 +151,7 @@
 .faq {
     background: var(--darkGreen);
     color: var(--cream);
-    padding: 4rem 5%;
+    padding: 3rem 5%;
 }
 
 .faq-header {
