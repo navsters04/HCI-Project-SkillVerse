@@ -160,3 +160,39 @@ document.querySelectorAll('.faq-question').forEach(button => {
         }
     });
 });
+
+// Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const courseCards = document.querySelectorAll('.course-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        courseCards.forEach(card => {
+            if (filter === 'all' || card.dataset.level === filter) {
+                card.style.display = 'flex';
+                setTimeout(() => card.style.opacity = '1', 10);
+            } else {
+                card.style.opacity = '0';
+                setTimeout(() => card.style.display = 'none', 300);
+            }
+        });
+    });
+});
+
+// View
+const viewBtns = document.querySelectorAll('.view-btn');
+const coursesContainer = document.getElementById('coursesContainer');
+viewBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        viewBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (btn.getAttribute('aria-label') === 'List view') {
+            coursesContainer.classList.add('list-view');
+        } else {
+            coursesContainer.classList.remove('list-view');
+        }
+    });
+});

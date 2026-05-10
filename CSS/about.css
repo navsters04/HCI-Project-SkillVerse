@@ -24,6 +24,7 @@
     line-height: 1.8;
     margin-bottom: 1rem;
     font-size: 1.05rem;
+    text-align: justify;
 }
 
 .history-image {
@@ -71,12 +72,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-}
-
-.vm-icon svg {
-    width: 28px;
-    height: 28px;
-    fill: var(--cream);
 }
 
 .vm-card h3 {

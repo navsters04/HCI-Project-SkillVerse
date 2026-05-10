@@ -29,6 +29,7 @@
     color: var(--darkGreen);
     background-color: var(--lightBrown);
     box-shadow: 0 0px 5px 5px var(--lightBrown);
+    font-size: clamp(2rem, 3.5vw, 4rem);
 }
 
 .whyUs, .joinUs{
@@ -36,11 +37,111 @@
     color: var(--text);
 }
 
+.whyUs {
+    background: var(--cream);
+    color: var(--text);
+    text-align: center;
+    padding: 5rem 5%;
+}
+
+.whyUs-header {
+    margin-bottom: 3rem;
+}
+
+.whyUs-header h2 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.whyUs-header h2 em {
+    font-style: italic;
+    color: var(--darkGreen);
+}
+
+.whyUs-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--fadedText);
+    font-size: 1.1rem;
+}
+
+.whyUs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.whyUs-features {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.whyUs-item {
+    text-align: center;
+}
+
+.whyUs-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(84, 107, 65, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.whyUs-item h4 {
+    font-family: var(--titleFont);
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+}
+
+.whyUs-item p {
+    font-size: 0.95rem;
+    color: var(--fadedText);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.whyUs-image {
+    position: relative;
+}
+
+.whyUs-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.whyUs-image::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    background: var(--lightBrown);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.whyUs-btn {
+    margin-top: 1rem;
+}
+
 .courses {
     background: var(--darkGreen);
     color: var(--cream);
     text-align: center;
-    padding: 5rem 5%;
+    padding: 3rem 5%;
 }
 
 .courses .btn{
@@ -66,13 +167,12 @@
     font-family: var(--titleFont);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--lightBrown);
-    margin-bottom: 1rem;
+    color: var(--lightBrown);                                                                                                                                                                                                                                                                                                                                                                                          
     font-size: 0.9rem;
 }
 
 .courses h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .courses-grid {
@@ -147,7 +247,7 @@
 
 .joinUs{
     text-align: center;
-    padding: 5rem 5%;
+    padding: 3rem 5%;
 }
 
 .joinUs .label {
@@ -156,12 +256,25 @@
     color: var(--darkGreen);
 }
 
-.joinUs h2{
-    margin: 1;
-}
-
 .joinUs p{
     margin: 3rem 15rem;
 }
 
+@media screen and (max-width: 700px) {
+    .whyUs-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 
+    .whyUs-image {
+        order: -1;
+    }
+
+    .whyUs-image img {
+        height: 250px;
+    }
+
+    .whyUs-features {
+        gap: 2rem;
+    }
+}

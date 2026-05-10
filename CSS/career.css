@@ -91,30 +91,61 @@
     border-color: rgba(84, 107, 65, 0.2);
 }
 
-.position-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: var(--text);
+.position-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-.position-info .tags {
+.position-header {
     display: flex;
-    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.position-info h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--text);
+    font-family: var(--titleFont);
+}
+
+.position-salary {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--darkGreen);
+    background: rgba(84, 107, 65, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.position-desc {
+    font-size: 0.95rem;
+    color: var(--fadedText);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.position-details {
+    display: flex;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
-.position-info .tags span {
-    font-size: 0.8rem;
-    padding: 4px 12px;
-    border-radius: 20px;
-    background: rgba(84, 107, 65, 0.1);
-    color: var(--darkGreen);
-    font-weight: 600;
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--fadedText);
 }
 
-.position-info .tags .location {
-    background: rgba(99, 70, 11, 0.1);
-    color: var(--brown);
+.detail-item i {
+    color: var(--darkGreen);
+    font-size: 0.9rem;
 }
 
 .faq {
@@ -229,7 +260,12 @@
         padding: 1.5rem;
     }
 
-    .position-info .tags {
+    .position-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .position-details {
         justify-content: center;
     }
 

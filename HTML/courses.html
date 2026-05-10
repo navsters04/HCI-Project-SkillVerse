@@ -43,71 +43,228 @@
         <p>From your first shuffle to professional routines, find the perfect class to elevate your cardistry journey.</p>
     </section>
 
+    <section class="course-controls">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All Courses</button>
+            <button class="filter-btn" data-filter="beginner">Beginner</button>
+            <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+            <button class="filter-btn" data-filter="advanced">Advanced</button>
+        </div>
+        <div class="view-toggle">
+            <button class="view-btn active" aria-label="Grid view">
+                <i class="fa-solid fa-table-cells-large"></i>
+            </button>
+            <button class="view-btn" aria-label="List view">
+                <i class="fa-solid fa-list"></i>
+            </button>
+        </div>
+    </section>
+
     <section class="course-catalog">
-        <div class="courses-grid">
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+        <div class="courses-grid" id="coursesContainer">
+            <div class="course-card" data-level="beginner">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Fundamentals of Cardistry">
+                    <span class="course-badge">Popular</span>
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level beginner">Beginner</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
                     <h3>Fundamentals of Cardistry</h3>
                     <p>Build a solid foundation with essential grips, basic shuffles, and introductory flourishes. Perfect for absolute beginners.</p>
                     <div class="course-meta">
-                        <span class="level">Beginner</span>
-                        <span>12 Lessons &middot; 4 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            4 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i>
+                            12 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Merritt McKinney</span>
+                        </div>
+                        <span class="course-price">$49</span>
                     </div>
                 </div>
             </div>
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+
+            <div class="course-card" data-level="intermediate">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Card Springs & Aerials">
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level intermediate">Intermediate</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
                     <h3>Card Springs & Aerials</h3>
                     <p>Master the art of card springs, aerial moves, and dynamic throws that add flair to any routine.</p>
                     <div class="course-meta">
-                        <span class="level">Intermediate</span>
-                        <span>14 Lessons &middot; 5 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            5 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i>
+                            14 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Jack Wilder</span>
+                        </div>
+                        <span class="course-price">$69</span>
                     </div>
                 </div>
             </div>
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+
+            <div class="course-card" data-level="advanced">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Advanced Fanning Techniques">
+                    <span class="course-badge hot">Hot</span>
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level advanced">Advanced</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
                     <h3>Advanced Fanning Techniques</h3>
                     <p>Explore complex fan variations including one-hand fans, pressure fans, and artistic fan displays.</p>
                     <div class="course-meta">
-                        <span class="level">Advanced</span>
-                        <span>18 Lessons &middot; 6 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            6 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i>
+                            18 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Henley Reeves</span>
+                        </div>
+                        <span class="course-price">$89</span>
                     </div>
                 </div>
             </div>
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+
+            <div class="course-card" data-level="intermediate">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Cardistry Composition">
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level intermediate">Intermediate</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
                     <h3>Cardistry Composition</h3>
                     <p>Learn how to structure routines, create smooth transitions, and develop your unique artistic style.</p>
                     <div class="course-meta">
-                        <span class="level">Intermediate</span>
-                        <span>15 Lessons &middot; 5 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            5 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i >
+                            15 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Dylan Rhodes</span>
+                        </div>
+                        <span class="course-price">$69</span>
                     </div>
                 </div>
             </div>
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+
+            <div class="course-card" data-level="intermediate">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Two-Hand Cuts Mastery">
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level intermediate">Intermediate</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
                     <h3>Two-Hand Cuts Mastery</h3>
                     <p>Dive deep into two-hand cut sequences, packet control, and seamless cut combinations.</p>
                     <div class="course-meta">
-                        <span class="level">Intermediate</span>
-                        <span>16 Lessons &middot; 5 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            5 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i>
+                            16 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Walter Mabry</span>
+                        </div>
+                        <span class="course-price">$69</span>
                     </div>
                 </div>
             </div>
-            <div class="course-card">
-                <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image">
+
+            <div class="course-card" data-level="advanced">
+                <div class="course-image-wrapper">
+                    <img src="https://images.pexels.com/photos/6254944/pexels-photo-6254944.jpeg" class="course-image" alt="Performance & Stage Presence">
+                    <span class="course-badge new">New</span>
+                </div>
                 <div class="course-info">
+                    <div class="course-top">
+                        <span class="level advanced">Advanced</span>
+                        <div class="course-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
                     <h3>Performance & Stage Presence</h3>
                     <p>Develop confidence, stage presence, and learn how to captivate audiences with your cardistry performances.</p>
                     <div class="course-meta">
-                        <span class="level">Advanced</span>
-                        <span>10 Lessons &middot; 4 Weeks</span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-clock"></i>
+                            4 Weeks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-book"></i>
+                            10 Lessons
+                        </span>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-instructor">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Instructor" class="instructor-avatar">
+                            <span>Daniel Atlas</span>
+                        </div>
+                        <span class="course-price">$69</span>
                     </div>
                 </div>
             </div>
@@ -118,7 +275,7 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="../index.html" class="logo-link">
-                    <img src="../assets/LogoLight.png" alt="Visual Skill Logo" class="logo">
+                    <img src="../assets/LogoLight.png" alt="Visual Skill Logo" class="logo footer-logo">
                 </a>
                 <p>Cardistry education for practitioners who value precision over performance.</p>
             </div>

@@ -46,7 +46,8 @@ a {
 }
 
 section {
-    padding: 4rem 5%;
+    padding: 1.5rem 5%;
+    margin: 0;
 }
 
 /* nav */
@@ -71,7 +72,9 @@ nav.hidden {
 }
 
 .logo {
+    margin-left: -170px;
     height: 40px;
+    padding-top: 0.4rem;
     transition: transform 0.3s ease;
 }
 
@@ -172,6 +175,10 @@ nav.hidden {
     text-align: center;
 }
 
+nav .btn{
+    padding: 0.4rem 1rem;
+}
+
 .btn:hover {
     background: var(--lightGreen);
     box-shadow: 0 0 25px var(--lightGreen);
@@ -181,7 +188,7 @@ nav.hidden {
 footer {
     background: var(--brown);
     color: var(--cream);
-    padding: 3rem 5% 1.5rem;
+    padding: 2rem 5% 1.5rem;
 }
 
 .footer-grid {
@@ -248,6 +255,10 @@ footer {
     color: rgba(255, 248, 236, 0.5);
 }
 
+.footer-logo{
+    margin-left: 0;
+}
+
 .social-links {
     display: flex;
     gap: 0.75rem;
@@ -268,18 +279,7 @@ footer {
     border-color: var(--lightGreen);
     background: rgba(153, 173, 122, 0.15);
     transform: translateY(-2px);
-}
-
-.social-links svg {
-    width: 16px;
-    height: 16px;
-    fill: rgba(255, 248, 236, 0.6);
-    transition: fill 0.3s ease;
-}
-
-.social-links a:hover svg {
-    fill: var(--lightGreen);
-}
+} 
 
 /* responsive */
 @media screen and (max-width: 700px) {
@@ -301,8 +301,13 @@ footer {
         font-size: 0.9rem;
     }
 
+    .nav-btn-desktop {
+        display: none;
+    }
+
     .logo {
         height: 32px;
+        margin-left: 0px;
     }
 
     .btn {
