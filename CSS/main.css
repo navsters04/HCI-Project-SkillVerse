@@ -105,13 +105,13 @@ nav.hidden {
     left: 0;
     width: 0%;
     height: 2px;
-    background: var(--darkGreen);
-    box-shadow: 0 0 6px var(--darkGreen);
+    background: var(--lightBrown);
+    box-shadow: 0 0 6px var(--lightBrown);
     transition: 0.3s ease-in-out;
 }
 
 .nav-links li a:hover {
-    color: var(--lightGreen);
+    color: var(--lightBrown);
     text-shadow: 0 0 10px rgba(153, 173, 122, 0.5);
 }
 
