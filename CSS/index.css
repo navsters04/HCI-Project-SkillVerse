@@ -21,7 +21,7 @@
     position: relative;
     z-index: 1;
     align-items: center;
-    max-width: 50vw;
+    max-width: 45vw;
     color: var(--cream);
 }
 

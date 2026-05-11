@@ -14,10 +14,10 @@
     --bodyFont: 'Merriweather', serif;
     --titleFont: 'Rye', cursive;
     --textSize: 1rem;
-}
+}   
 
-* {
-    box-sizing: border-box;
+p{
+    cursor: default;
 }
 
 body {
@@ -32,7 +32,6 @@ body {
 
 h1, h2, h3 {
     font-family: var(--titleFont);
-    font-weight: 700;
     line-height: 1.1;
 }
 
@@ -50,7 +49,6 @@ section {
     margin: 0;
 }
 
-/* nav */
 nav {
     position: sticky;
     top: 0;
@@ -184,7 +182,6 @@ nav .btn{
     box-shadow: 0 0 25px var(--lightGreen);
 }
 
-/* Footer */
 footer {
     background: var(--brown);
     color: var(--cream);
@@ -281,7 +278,6 @@ footer {
     transform: translateY(-2px);
 } 
 
-/* responsive */
 @media screen and (max-width: 700px) {
     nav {
         padding: 10px 4%;

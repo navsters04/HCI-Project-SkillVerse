@@ -9,38 +9,17 @@
     overflow: hidden;
 }
 
-.career-header::before {
-    content: "";
-    position: absolute;
-    top: -30%;
-    left: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(153, 173, 122, 0.15) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
 .career-header .label {
     display: inline-block;
     font-family: var(--titleFont);
-    text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--lightBrown);
-    margin-bottom: 1rem;
     font-size: 0.9rem;
     position: relative;
 }
 
 .career-header h1 {
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.career-header > p {
-    max-width: 600px;
-    margin: 0 auto;
-    opacity: 0.9;
-    font-size: 1.1rem;
+    margin: 1rem;
     position: relative;
 }
 
