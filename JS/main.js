@@ -83,7 +83,7 @@ function setField(inputId, errorId, isError) {
 
 function validateEmail() {
   const value = document.getElementById("email").value.trim();
-  return setField("email", "emailError", !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
+  return setField("email", "emailError", !value || !value.includes('@') || !value.includes('.'));
 }
 
 function validateUsername() {
